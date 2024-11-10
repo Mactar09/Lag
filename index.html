@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site qui fait laguer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenue sur le site qui fait laguer</h1>
+        <button onclick="startLag()">Commencer à laguer</button>
+    </div>
+
+    <script>
+        function startLag() {
+            while (true) {
+                // Boucle infinie pour surcharger le processeur
+                let x = Math.random() * Math.random();
+            }
+        }
+    </script>
+</body>
+</html>
